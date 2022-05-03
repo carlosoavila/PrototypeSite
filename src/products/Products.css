@@ -1,0 +1,126 @@
+
+.container {
+    width: 1050px;
+    display: flex;
+    height: 320px;
+    margin-left: 50px;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    
+    box-shadow: var(--shadow);
+
+}
+
+.card-image img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    border: solid black 2px;
+    box-shadow: var(--shadow);
+}
+
+.card-description {
+    background-color: #FAFAFA;
+    width: 200px;
+    height: 100px;
+    color: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    border: solid 2px black;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.card-description p{
+    padding: 15px;
+    font-size: 0.8rem;
+}
+
+.card:hover {
+    background: #24C6DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+strong {
+    color: green;
+    font-size: 1rem;
+}
+
+@media(max-width:768px) {
+    .container {
+        width: 768px;
+        display: flex;
+        height: 320px;
+        margin-left: 50px;
+        margin-top: 50px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .card {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        background-color: #FFF;
+        width: 230px;
+        height: 90px;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+    }
+
+    .card-image img{
+        width: 100px;
+        height: 55px;
+        border-radius: 10px;
+        border: solid black 2px;
+        box-shadow: var(--shadow);
+    }
+
+    .card-description {
+        background-color: #FAFAFA;
+        width: 100px;
+        height: 55px;
+        color: #0c0c0c;
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        border: solid 2px black;
+        border-radius: 10px;
+        align-items: center;
+    }
+
+    .card-description p{
+        padding: 15px;
+        font-size: 0.5rem;
+    }
+
+    strong {
+        color: green;
+        font-size: 0.6rem;
+    }
+}
+

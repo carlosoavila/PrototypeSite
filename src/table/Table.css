@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 1050px;
+    
+}
+
+
+table{
+    border: solid 5px black;
+    width: 500px;
+    height: 225px;
+    
+}
+
+th{
+    left: 42px;
+    position: relative;
+    border: solid 5px black;
+    
+}
+
+td {
+    left: 55px;
+    position: relative;
+    border: solid 2px black;
+    font-weight: 500;
+}
